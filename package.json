@@ -10,7 +10,7 @@
 		"lint": "prettier --check .",
 		"format": "prettier --write .",
 		"postinstall": "prisma generate",
-		"postbuild": "cp prisma/schema.prisma",
+		"postbuild": "cp prisma/schema.prisma .",
 		"vercel-build": "prisma migrate deploy && npm run build"
 	},
 	"devDependencies": {
